@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactsActivity">
+
+    <RelativeLayout
+        android:id="@+id/upper_bg"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#46BEE6"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome back, Rustem!"
+            android:textColor="@color/cardview_light_background"
+            android:fontFamily="serif-monospace"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="serif-monospace"
+            android:text="Your admin panel"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="13dp"
+            tools:ignore="TextSizeCheck" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/upper_bg"
+        android:layout_above="@id/tab_bar"
+        android:layout_marginHorizontal="20dp"
+        />
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#46BEE6"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="#FFFFFF"
+            android:onClick="goHome"
+            android:text="Home"
+            android:textColor="@color/black" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Profile"
+            android:textColor="@color/black"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Contact"
+            android:textColor="@color/black"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
